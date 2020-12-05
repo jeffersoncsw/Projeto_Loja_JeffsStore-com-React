@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import FormPagamento from '../Produto/Img/formas-pagamento.png';
+import FormPagamento from '../Produtos/Produto/img/formas-pagamento.png';
 
 function Footer(){
     return(

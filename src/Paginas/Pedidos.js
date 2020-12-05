@@ -12,7 +12,7 @@ export default function Pedidos(){
         valor_total: ""
     });
 
-    const controleMudanca = async (e) => {
+    const controleMudanca = (e) => {
         console.log(e.target.value)
         setForm({
             ...form,
@@ -25,11 +25,21 @@ export default function Pedidos(){
         const valor_total = parseFloat(form.valor_unitario) * parseFloat(form.quantidade);
         document.getElementById("valor_total").value = `R$ ${valor_total}`;
 
+        setForm({
+            ...form,
+            valor_total: valor_total
+        })
+
         const json = JSON.stringify(form);
 
         const opc = {
+            crossDomain: true,
+            mode: 'cors',
             method: 'POST',
-            headers: { 'Content-type': 'application/json'},
+            headers: { 
+                'Content-type': 'application/json',
+                'Accept': 'application/json'
+            },
             body: json
         }
 

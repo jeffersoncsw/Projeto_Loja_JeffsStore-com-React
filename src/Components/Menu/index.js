@@ -1,7 +1,7 @@
 import {Navbar, Nav} from 'react-bootstrap';
 import {Link, withRouter} from 'react-router-dom';
 import './Menu.css';
-import Logo from '../Produto/Img/Jeffs-Store_logo.png';
+import Logo from '../Produtos/Produto/img/Jeffs-Store_logo.png';
 
 function MenuInicial(props){
     const {location} = props

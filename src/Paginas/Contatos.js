@@ -1,7 +1,7 @@
-import {Form, Row, Button} from 'react-bootstrap';
+import {Form, Button} from 'react-bootstrap';
 
-import Email from '../Components/Produto/Img/imagem-email.png';
-import Whatsapp from '../Components/Produto/Img/imagem-whatsapp.png';
+import Email from '../Components/Produtos/Produto/img/imagem-email.png';
+import Whatsapp from '../Components/Produtos/Produto/img/imagem-whatsapp.png';
 
 import '../App.css';
 

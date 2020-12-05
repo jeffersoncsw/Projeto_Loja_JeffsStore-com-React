@@ -1,6 +1,6 @@
 import {Switch, Route} from 'react-router-dom';
 
-import Produtos from './Paginas/Produtos';
+import Produtos from './Components/Produtos/Produto/Produto.js';
 import Pedidos from './Paginas/Pedidos';
 import Lojas from './Paginas/Lojas';
 import Contatos from './Paginas/Contatos';
