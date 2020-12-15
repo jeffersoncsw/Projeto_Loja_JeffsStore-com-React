@@ -6,6 +6,22 @@ import Whatsapp from '../Components/Produtos/Produto/img/imagem-whatsapp.png';
 import '../App.css';
 
 export default function Contatos(){
+
+    const controleEnvio = async (e) => {
+        e.preventDefault();
+
+        const url = "http://localhost/react/jeffsstore/src/Components/Php/contatos.php";
+        const dados = new FormData(e.target);
+
+        const resposta = await fetch(url, {
+            method: 'POST',
+            body: dados
+        });
+
+        const resultado = await resposta.json()
+
+    }
+
    return(
     <div className="container-fluid" >
         <div className="mt-2"><h2>Contatos</h2></div>
@@ -21,7 +37,7 @@ export default function Contatos(){
             </div>
         </div>
         <div className="container-fluid col-md-6 mx-auto jumbotron p-3 my-3 align-items-center">
-            <Form className="form" method="POST" action="">
+            <Form className="form" onSubmit={controleEnvio}>
                 <Form.Group>
                     <Form.Label>Nome:</Form.Label>
                     <Form.Control type="text" name="nome" placeholder="Nome" />
@@ -32,7 +48,7 @@ export default function Contatos(){
                         <Form.Control as="textarea" rows={3} placeholder="Digite aqui sua mensagem" />
                     </Form.Group>
                 </Form.Group>
-                <Button type="submit" variant="primary" name="enviar" onclick="enviar()">Enviar</Button>
+                <Button type="submit" variant="primary">Enviar</Button>
             </Form>
         </div>
     </div>

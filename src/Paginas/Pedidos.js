@@ -96,7 +96,7 @@ export default function Pedidos(){
                 </Form.Row>
                 
                 <Button variant="primary" type="submit">
-                    Enviar
+                    Concluir Pedido
                 </Button>
             </Form>
         </div>
