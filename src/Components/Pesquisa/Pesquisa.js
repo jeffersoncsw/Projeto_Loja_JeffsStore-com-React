@@ -6,7 +6,7 @@ export default function Pesquisa(){
         const valor = e.target.value;
         console.log(valor);
 
-        const url = `http://localhost/react/jeffsstore/src/Components/Php/contatos.php?pesquisa=${valor}`;
+        const url = `url?pesquisa=${valor}`;
         fetch(url).then(resposta => resposta.json()).then(resultado => console.log(resultado));
     }
 

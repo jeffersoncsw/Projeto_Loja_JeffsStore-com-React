@@ -33,13 +33,13 @@ export default function Produtos(){
                     <div className="produtos">
                         {produtos && produtos.map(item => 
                         <Produto 
-                        key={item.IDPRODUTO} 
-                        id={item.IDPRODUTO}
-                        categoria={item.CATEGORIA} 
-                        imagem={item.IMAGEM}
-                        descricao={item.DESCRICAO}
-                        preco={item.PRECO}
-                        precofinal={item.PRECOFINAL} />)}
+                        key={item.idproduto} 
+                        id={item.idproduto}
+                        categoria={item.categoria} 
+                        imagem={item.imagem}
+                        descricao={item.descricao}
+                        preco={item.preco}
+                        precofinal={item.precofinal} />)}
                     </div>
             </Row>
         </Container>
