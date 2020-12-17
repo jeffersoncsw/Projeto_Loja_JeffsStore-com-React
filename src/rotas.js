@@ -9,6 +9,7 @@ import Home from './Paginas/Home';
 function Rotas(){
     return(
         <Switch>
+            <Route exact path="/" component={Home} />
             <Route exact path="/home" component={Home} />
             <Route exact path="/produtos" component={Produtos} />
             <Route exact path="/pedidos" component={Pedidos} />

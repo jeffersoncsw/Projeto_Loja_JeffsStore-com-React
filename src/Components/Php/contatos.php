@@ -1,45 +1,47 @@
 <?php
 
-    header("Acess-Control-Allow-Origin:*");
+    header("Access-Control-Allow-Origin:*");
+
+    require_once 'db_connect.php';
 
     if($_SERVER['REQUEST_METHOD'] === 'GET'){
-        echo json_encode(array("msg" => "Método GET Efetuado"));
+
+        $sql = "SELECT * FROM contatos";
+        $resultado = query($sql);
+        $contatos = [];
+        
+
+        while($row = mysqli_fetch_assoc($resultado)){
+            $contatos[] = $row;
+        }
+
+        echo json_encode($contatos);
+
     } else if($_SERVER['REQUEST_METHOD'] === 'POST'){
+
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $mensagem = $_POST['mensagem'];
+        $datacontato = $_POST['datacontato'];
+
+        $sql = "INSERT INTO contatos VALUES(null, '$nome', '$email', '$mensagem', now());";
+
+        nonquery($sql);
+
         echo json_encode(array("msg" => "Método POST Efetuado"));
+
     } else if($_SERVER['REQUEST_METHOD'] === 'PUT'){
+
         echo json_encode(array("msg" => "Método PUT Efetuado"));
+
     } else if($_SERVER['REQUEST_METHOD'] === 'DELETE'){
+
         echo json_encode(array("msg" => "Método DELETE Efetuado"));
+
     } else {
+
         echo "Falha no processamento de dados.";
+
     }
 
-    // require_once "php/actions/db_connect.php";
-
-    // if (isset($_POST['nome']) && isset($_POST['mensagem'])){
-    //     $nome = $_POST['nome'];
-    //     $mensagem = $_POST['mensagem'];
-
-    //     $sql = "INSERT INTO contatos (nome, mensagem) VALUES ('$nome','$mensagem')";
-    //     $result = $connect->query($sql);
-
-    //     header("Location: ./contatos.php");
-    // }
-?>
-
-<?php
-    // $sql = "SELECT * FROM contatos";
-
-    // $result = $connect->query($sql);
-
-    // if($result->num_rows > 0){
-    //     while($rows = $result->fetch_assoc()){
-    //     echo "Data: ", $rows['data'], "<br>";
-    //     echo "Nome: ", $rows['nome'], "<br>";
-    //     echo "Mensagem: ", $rows['mensagem'], "<br>";
-    //     echo "<hr>";
-    //     }
-    // }else{
-    //     echo "Nenhuma mensagem ainda.";
-    // }
 ?>

@@ -7,13 +7,10 @@ function MenuInicial(props){
     const {location} = props
     return(
         <Navbar className="navbar-dark" bg="primary" expand="lg" variant="dark">
-            <Navbar.Brand as={Link} href="#"><img src={Logo} width="100px" alt="Jeff's Store" /></Navbar.Brand>
+            <Navbar.Brand as={Link} href="/home" to="/home"><img src={Logo} width="100px" alt="Jeff's Store" /></Navbar.Brand>
             <Navbar.Toggle aria-controls="item-menu"></Navbar.Toggle>
             <Navbar.Collapse id="item-menu">
                 <Nav activeKey={location.pathname} className="ml-auto mr-3">
-                    <Nav.Item>
-                        <Nav.Link as={Link} href="/home" to="/home">Pagina Inicial</Nav.Link>
-                    </Nav.Item>
                     <Nav.Item>
                         <Nav.Link as={Link} href="/produtos" to="/produtos">Produtos</Nav.Link>
                     </Nav.Item>
