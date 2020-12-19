@@ -3,7 +3,7 @@ import './Produto.css';
 export default function Produto(props){    
 
     return(
-        <div className="box_produtos">
+        <div id={props.categoria} className="box_produtos">
             <div className={props.categoria}>
                 <img src={require(`./img/${props.imagem}`).default} width="120px" alt=""/>
                 <div>

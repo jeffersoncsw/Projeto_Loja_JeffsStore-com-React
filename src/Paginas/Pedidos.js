@@ -18,8 +18,9 @@ export default function Pedidos(){
         });
 
         const resultado = await resposta.json();
-
+        
         console.log(resultado)
+
     }
 
     useEffect(() => {
