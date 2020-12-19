@@ -14,7 +14,6 @@ export default function Contatos(){
     const [ contatos, setContatos ] = useState([])
 
     const controleEnvio = async (e) => {
-        e.preventDefault();
 
         const url = "http://localhost/react/jeffsstore/src/Components/Php/contatos.php";
         const dados = new FormData(e.target);

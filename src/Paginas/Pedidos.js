@@ -7,7 +7,6 @@ export default function Pedidos(){
     const [ pedidos, setPedidos ] = useState([])
 
     const controleEnvio = async (e) => {
-        e.preventDefault();
 
         const url = "http://localhost/react/jeffsstore/src/Components/Php/enviar_pedidos.php";
         const dados = new FormData(e.target);
@@ -32,51 +31,6 @@ export default function Pedidos(){
         }
         listaPedidos();
     },[pedidos]);
-
-    
-
-        // const valor_total = parseFloat(form.valor_unitario) * parseFloat(form.quantidade);
-        // document.getElementById("valor_total").value = `R$ ${valor_total}`;
-
-        // setForm({
-        //     ...form,
-        //     valor_total: valor_total
-        // })
-
-        // const json = JSON.stringify(form);
-
-        // const opc = {
-        //     crossDomain: true,
-        //     mode: 'cors',
-        //     method: 'POST',
-        //     headers: { 
-        //         'Content-type': 'application/json',
-        //         'Accept': 'application/json'
-        //     },
-        //     body: json
-        // }
-
-       // const url = "http://localhost/react/jeffsstore/src/Components/Php/enviar_pedidos.php";
-        // const dados = new FormData(e.target);
-
-        // const resposta = await fetch(url, {
-        //     method: 'POST',
-        //     body: dados,
-        // });
-
-    //     const resultado = await resposta.json();
-
-    //     console.log(resultado)
-        
-    // }
-
-    // const controleMudanca = (e) => {
-    //     console.log(e.target.value)
-    //     setForm({
-    //         ...form,
-    //         [e.target.id]: e.target.value
-    //     })
-    // }
 
     return(
         <div className="container">

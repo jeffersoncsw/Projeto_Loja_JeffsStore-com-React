@@ -4,30 +4,15 @@ import {ButtonGroup, Button} from 'react-bootstrap';
 import './Categorias.css';
 
 export default function Categorias() {
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {
-    //         categoria:""
-    //     }
-
-    //     this.ExibirCategoria = this.ExibirCategoria.bind(this);
-
-    //   }
-      
-    //   ExibirCategoria(e) {
-    //     this.setState({categoria:""});
-    //     this.setState({categoria:e.target.value});
-    //     console.log(this.state.categoria);
-    //   }
-    const ExibirCategoria = (evento) =>{
+    function ExibirCategoria(evento) {
         const categoria = evento.target.id;
         let elementos = document.getElementsByClassName('box_produtos');
         console.log(elementos);
-        for(let i = 0; i < elementos.length; i++){
+        for (let i = 0; i < elementos.length; i++) {
             console.log(elementos[i].id);
-            if (categoria === elementos[i].id){
+            if (categoria === elementos[i].id) {
                 elementos[i].style = "display:inline-block";
-            }else{
+            } else {
                 elementos[i].style = "display:none";
             }
         }
@@ -39,7 +24,6 @@ export default function Categorias() {
             elementos[i].style = "display:inline-block";
         }
     };
-
 
     return(
         <div >
