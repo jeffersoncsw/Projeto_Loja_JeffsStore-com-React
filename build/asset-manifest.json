@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.36222590.chunk.css",
+    "main.js": "/static/js/main.74d33e09.chunk.js",
+    "main.js.map": "/static/js/main.74d33e09.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.60882e58.js",
+    "runtime-main.js.map": "/static/js/runtime-main.60882e58.js.map",
+    "static/css/2.1a02f21c.chunk.css": "/static/css/2.1a02f21c.chunk.css",
+    "static/js/2.56a0cbf2.chunk.js": "/static/js/2.56a0cbf2.chunk.js",
+    "static/js/2.56a0cbf2.chunk.js.map": "/static/js/2.56a0cbf2.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.1a02f21c.chunk.css.map": "/static/css/2.1a02f21c.chunk.css.map",
+    "static/css/main.36222590.chunk.css.map": "/static/css/main.36222590.chunk.css.map",
+    "static/js/2.56a0cbf2.chunk.js.LICENSE.txt": "/static/js/2.56a0cbf2.chunk.js.LICENSE.txt",
+    "static/media/formas-pagamento.png": "/static/media/formas-pagamento.b4751b50.png",
+    "static/media/imagem-whatsapp.png": "/static/media/imagem-whatsapp.2f45ec52.png",
+    "static/media/impressora_canon.png": "/static/media/impressora_canon.c208f4db.png",
+    "static/media/impressora_epson.png": "/static/media/impressora_epson.af2a0efc.png",
+    "static/media/impressora_hp.png": "/static/media/impressora_hp.013faa6c.png",
+    "static/media/mouse_dell.png": "/static/media/mouse_dell.1566a298.png",
+    "static/media/mouse_multilaser.png": "/static/media/mouse_multilaser.5010703f.png",
+    "static/media/notebook_dell.png": "/static/media/notebook_dell.c1829b9d.png",
+    "static/media/notebook_positivo.png": "/static/media/notebook_positivo.e76806b8.png",
+    "static/media/notebook_samsung.png": "/static/media/notebook_samsung.dbb6a10b.png",
+    "static/media/tablet_apple.png": "/static/media/tablet_apple.0ccf8559.png",
+    "static/media/tablet_samsung.png": "/static/media/tablet_samsung.690ef4fe.png",
+    "static/media/teclado_elg.png": "/static/media/teclado_elg.a5b04841.png",
+    "static/media/teclado_multilaser.png": "/static/media/teclado_multilaser.8eebec03.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.60882e58.js",
+    "static/css/2.1a02f21c.chunk.css",
+    "static/js/2.56a0cbf2.chunk.js",
+    "static/css/main.36222590.chunk.css",
+    "static/js/main.74d33e09.chunk.js"
+  ]
+}
