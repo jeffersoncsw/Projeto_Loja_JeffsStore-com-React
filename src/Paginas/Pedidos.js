@@ -7,6 +7,7 @@ export default function Pedidos(){
     const [ pedidos, setPedidos ] = useState([])
 
     const controleEnvio = async (e) => {
+        e.preventDefault();
 
         const url = "http://localhost/react/jeffsstore/src/Components/Php/enviar_pedidos.php";
         const dados = new FormData(e.target);
