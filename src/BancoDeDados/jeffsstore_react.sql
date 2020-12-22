@@ -1,3 +1,7 @@
+CREATE DATABASE jeffsstore_react;
+
+USE jeffsstore_react;
+
 /*TABELA DE CONTATOS */
 
 -- SELECT * FROM contatos;

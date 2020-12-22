@@ -10,7 +10,7 @@ export default function Produtos(){
 
     useEffect(()=> {
         async function fetchData(){
-            const resposta = await fetch("http://192.168.15.40/Projeto_Loja_JeffsStore-com-React/src/Components/Php/produtos.php")
+            const resposta = await fetch("http://jeffsstore.sytes.net/Projeto_Loja_JeffsStore-com-React/src/Components/Php/produtos.php")
             const dados = await resposta.json()
             setProdutos(dados);
         }
