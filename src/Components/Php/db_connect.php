@@ -1,9 +1,9 @@
 <?php
 
     function query($sql) {
-        $servidor = "localhost";
-        $usuario  = "root";
-        $senha    = "juliocesar";
+        $servidor = "192.168.15.40";
+        $usuario  = "jeffsstore";
+        $senha    = "Jeffsstore123!";
         $banco    = "jeffsstore_react";
 
         $connect = mysqli_connect($servidor, $usuario, $senha, $banco);
@@ -13,9 +13,9 @@
     }
 
     function nonquery($sql) {
-        $servidor = "localhost";
-        $usuario  = "root";
-        $senha    = "juliocesar";
+        $servidor = "192.168.15.40";
+        $usuario  = "jeffsstore";
+        $senha    = "Jeffsstore123!";
         $banco    = "jeffsstore_react";
 
         $connect = mysqli_connect($servidor, $usuario, $senha, $banco);
